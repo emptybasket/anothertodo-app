@@ -13,6 +13,7 @@
 		5AF49D272A41F49B00649E2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF49D262A41F49B00649E2A /* Preview Assets.xcassets */; };
 		5AF49D2F2A41F76900649E2A /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF49D2E2A41F76900649E2A /* ToDo.swift */; };
 		5AF49D322A4208A600649E2A /* AddToDoListItemScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF49D312A4208A600649E2A /* AddToDoListItemScreen.swift */; };
+		5AF49D362A4210D700649E2A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF49D352A4210D700649E2A /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		5AF49D262A41F49B00649E2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5AF49D2E2A41F76900649E2A /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		5AF49D312A4208A600649E2A /* AddToDoListItemScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoListItemScreen.swift; sourceTree = "<group>"; };
+		5AF49D352A4210D700649E2A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +57,10 @@
 		5AF49D1E2A41F49A00649E2A /* Another ToDo App */ = {
 			isa = PBXGroup;
 			children = (
+				5AF49D332A42109D00649E2A /* Helper Files */,
 				5AF49D302A42089400649E2A /* Screens */,
 				5AF49D2D2A41F74200649E2A /* Models */,
 				5AF49D1F2A41F49A00649E2A /* Another_ToDo_AppApp.swift */,
-				5AF49D212A41F49A00649E2A /* ContentView.swift */,
 				5AF49D232A41F49B00649E2A /* Assets.xcassets */,
 				5AF49D252A41F49B00649E2A /* Preview Content */,
 			);
@@ -84,9 +86,26 @@
 		5AF49D302A42089400649E2A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5AF49D212A41F49A00649E2A /* ContentView.swift */,
 				5AF49D312A4208A600649E2A /* AddToDoListItemScreen.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		5AF49D332A42109D00649E2A /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AF49D342A4210AD00649E2A /* Extensions */,
+			);
+			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		5AF49D342A4210AD00649E2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5AF49D352A4210D700649E2A /* String+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AF49D362A4210D700649E2A /* String+Extensions.swift in Sources */,
 				5AF49D322A4208A600649E2A /* AddToDoListItemScreen.swift in Sources */,
 				5AF49D2F2A41F76900649E2A /* ToDo.swift in Sources */,
 				5AF49D222A41F49A00649E2A /* ContentView.swift in Sources */,

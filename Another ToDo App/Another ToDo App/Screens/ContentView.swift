@@ -6,17 +6,21 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
     
     @State private var isPresented: Bool = false
     
+    @Query(sort: \.id, order: .reverse) private var todos: [ToDo]
+    
     var body: some View {
         NavigationStack {
              VStack {
-                Text("Hello. world!")
-                    .padding()
-                    .navigationTitle("TODO App")
+                 List(todos, id: \.id) { todo in
+                     Text(todo.name)
+                 }
+                                    .navigationTitle("TODO App")
             }
              .sheet(isPresented: $isPresented, content: {
                  AddToDoListItemScreen()
@@ -36,4 +40,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .modelContainer(for: [ToDo.self])
 }

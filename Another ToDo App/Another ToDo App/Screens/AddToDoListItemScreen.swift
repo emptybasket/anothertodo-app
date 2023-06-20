@@ -6,32 +6,49 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct AddToDoListItemScreen: View {
     
-    @State private var title = ""
+    @State private var name = ""
     @State private var noteDiscription = ""
     
+    @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
+    
+    private var isFormValid: Bool {
+        !name.isEmptyOrWithWhiteSpace && !noteDiscription.isEmptyOrWithWhiteSpace
+    }
     
     var body: some View {
         NavigationStack {
             Form {
-                TextField("Enter Title", text: $title)
+                TextField("Enter Title", text: $name)
                 TextField("Enter your notes", text: $noteDiscription)
-                
-                Button {
+                Button("Save") {
+                    let todo = ToDo(name: name, note: noteDiscription)
+                    context.insert(todo)
+                    do {
+                        try context.save()
+                    } catch {
+                        print(error.localizedDescription)
+                    }
                     dismiss()
-                } label: {
-                    Text("Save")
-                }
-                
+                }.disabled(!isFormValid)
             }
             .navigationTitle("Add todo item")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Close") {
+                        dismiss()
+                    }
+                }
+            }
         }
     }
 }
 
 #Preview {
     AddToDoListItemScreen()
+        .modelContainer(for: [ToDo.self])
 }

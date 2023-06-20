@@ -15,5 +15,6 @@ struct Another_ToDo_AppApp: App {
             let _ = print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path)
             ContentView()
         }
+        .modelContainer(for: [ToDo.self])
     }
 }
