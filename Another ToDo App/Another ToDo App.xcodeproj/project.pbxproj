@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A78C11D2A42223A00C86FFA /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A78C11C2A42223A00C86FFA /* ToDoListView.swift */; };
 		5AF49D202A41F49A00649E2A /* Another_ToDo_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF49D1F2A41F49A00649E2A /* Another_ToDo_AppApp.swift */; };
 		5AF49D222A41F49A00649E2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF49D212A41F49A00649E2A /* ContentView.swift */; };
 		5AF49D242A41F49B00649E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF49D232A41F49B00649E2A /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A78C11C2A42223A00C86FFA /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
 		5AF49D1C2A41F49A00649E2A /* Another ToDo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Another ToDo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF49D1F2A41F49A00649E2A /* Another_ToDo_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Another_ToDo_AppApp.swift; sourceTree = "<group>"; };
 		5AF49D212A41F49A00649E2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A78C11B2A42221600C86FFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A78C11C2A42223A00C86FFA /* ToDoListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5AF49D132A41F49900649E2A = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +67,7 @@
 		5AF49D1E2A41F49A00649E2A /* Another ToDo App */ = {
 			isa = PBXGroup;
 			children = (
+				5A78C11B2A42221600C86FFA /* Views */,
 				5AF49D332A42109D00649E2A /* Helper Files */,
 				5AF49D302A42089400649E2A /* Screens */,
 				5AF49D2D2A41F74200649E2A /* Models */,
@@ -178,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A78C11D2A42223A00C86FFA /* ToDoListView.swift in Sources */,
 				5AF49D362A4210D700649E2A /* String+Extensions.swift in Sources */,
 				5AF49D322A4208A600649E2A /* AddToDoListItemScreen.swift in Sources */,
 				5AF49D2F2A41F76900649E2A /* ToDo.swift in Sources */,

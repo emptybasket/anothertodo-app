@@ -16,15 +16,13 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-             VStack {
-                 List(todos, id: \.id) { todo in
-                     Text(todo.name)
-                 }
-                                    .navigationTitle("TODO App")
+            VStack {
+                ToDoListView(todos: todos)
+                    .navigationTitle("TODO App")
             }
-             .sheet(isPresented: $isPresented, content: {
-                 AddToDoListItemScreen()
-             })
+            .sheet(isPresented: $isPresented, content: {
+                AddToDoListItemScreen()
+            })
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
