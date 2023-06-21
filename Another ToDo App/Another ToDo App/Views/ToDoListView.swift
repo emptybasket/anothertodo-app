@@ -29,11 +29,15 @@ struct ToDoListView: View {
     var body: some View {
         List {
             ForEach(todos, id: \.id) { todo in
-                VStack {
-                    Text(todo.name)
-                    Text(todo.note)
+                NavigationLink(value: todo) {
+                    VStack {
+                        Text(todo.name)
+                        Text(todo.note)
+                    }
                 }
             }.onDelete(perform: deleteTodo)
+        }.navigationDestination(for: ToDo.self) { todo in
+            ToDoDetailScreen(todo: todo)
         }
     }
 }

@@ -11,7 +11,6 @@ import SwiftData
 struct ContentView: View {
     
     @State private var isPresented: Bool = false
-    
     @Query(sort: \.id, order: .reverse) private var todos: [ToDo]
     
     var body: some View {

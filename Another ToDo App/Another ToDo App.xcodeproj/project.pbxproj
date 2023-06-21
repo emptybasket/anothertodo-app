@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A78C11D2A42223A00C86FFA /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A78C11C2A42223A00C86FFA /* ToDoListView.swift */; };
+		5A78C11F2A42D36300C86FFA /* ToDoDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A78C11E2A42D36300C86FFA /* ToDoDetailScreen.swift */; };
 		5AF49D202A41F49A00649E2A /* Another_ToDo_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF49D1F2A41F49A00649E2A /* Another_ToDo_AppApp.swift */; };
 		5AF49D222A41F49A00649E2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF49D212A41F49A00649E2A /* ContentView.swift */; };
 		5AF49D242A41F49B00649E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF49D232A41F49B00649E2A /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		5A78C11C2A42223A00C86FFA /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		5A78C11E2A42D36300C86FFA /* ToDoDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailScreen.swift; sourceTree = "<group>"; };
 		5AF49D1C2A41F49A00649E2A /* Another ToDo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Another ToDo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF49D1F2A41F49A00649E2A /* Another_ToDo_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Another_ToDo_AppApp.swift; sourceTree = "<group>"; };
 		5AF49D212A41F49A00649E2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				5AF49D212A41F49A00649E2A /* ContentView.swift */,
 				5AF49D312A4208A600649E2A /* AddToDoListItemScreen.swift */,
+				5A78C11E2A42D36300C86FFA /* ToDoDetailScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				5AF49D362A4210D700649E2A /* String+Extensions.swift in Sources */,
 				5AF49D322A4208A600649E2A /* AddToDoListItemScreen.swift in Sources */,
 				5AF49D2F2A41F76900649E2A /* ToDo.swift in Sources */,
+				5A78C11F2A42D36300C86FFA /* ToDoDetailScreen.swift in Sources */,
 				5AF49D222A41F49A00649E2A /* ContentView.swift in Sources */,
 				5AF49D202A41F49A00649E2A /* Another_ToDo_AppApp.swift in Sources */,
 			);
