@@ -130,7 +130,8 @@ SwiftData supports the all-new observable feature for your modeled properties. W
 
 While studying for this article I tried also to create a sample app to reinforce what I understand so far. Let's break down and explore how to create a simple ToDo app using SwiftData. This app will allow you to create, view, update, and delete todo items.
 
-<img width="656" alt="Sample TODO App" src="https://github.com/emptybasket/anothertodo-app/assets/98072257/28882429-66a2-416b-984a-d2310ddf0b8b">
+<img width="656" alt="Screenshot 2023-06-22 at 3 18 57 PM" src="https://github.com/emptybasket/anothertodo-app/assets/98072257/9b11b7fd-5747-4687-8052-196ba19a3e23">
+
 
 
 ## Creating the ToDo Model
