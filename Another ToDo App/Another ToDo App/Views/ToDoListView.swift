@@ -30,9 +30,11 @@ struct ToDoListView: View {
         List {
             ForEach(todos, id: \.id) { todo in
                 NavigationLink(value: todo) {
-                    VStack {
+                    VStack(alignment: .leading) {
                         Text(todo.name)
+                            .font(.title3)
                         Text(todo.note)
+                            .font(.caption)
                     }
                 }
             }.onDelete(perform: deleteTodo)
@@ -41,7 +43,3 @@ struct ToDoListView: View {
         }
     }
 }
-
-//#Preview {
-//    ToDoListView()
-//}
