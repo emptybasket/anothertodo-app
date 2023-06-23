@@ -338,6 +338,8 @@ struct ContentView: View {
 
 And that's it! You've now seen a step-by-step explanation of how to create a simple ToDo app using SwiftData. It covers how to create, read, update, and delete data using SwiftData's key features.
 
+If you want to check the source code of the completed project and play around with it, you can download it [here](https://github.com/emptybasket/anothertodo-app/tree/develop).
+
 ## SwiftData: Your New Ally in App Development 
 
 SwiftData stands as a potent new addition to your arsenal for managing data, designed with an intrinsic understanding of Swift's capabilities. It provides a code-centric approach that encourages a more direct and intuitive coding experience. With features such as persistence, undo and redo, iCloud synchronization, and widget development, SwiftData is a game-changer for your app development process.
