@@ -128,10 +128,17 @@ SwiftData supports the all-new observable feature for your modeled properties. W
 
 ## A sample ToDo App using what we learn so far
 
-While studying for this article I tried also to create a sample app to reinforce what I understand so far. Let's break down and explore how to create a simple ToDo app using SwiftData. This app will allow you to create, view, update, and delete todo items.
+While researching for this article, I decided to take a hands-on approach and create a sample app to solidify my understanding. Together, we'll explore the process of building a simple ToDo app using SwiftData. With this app, you'll be able to effortlessly create, view, update, and delete your todo items.
 
 <img width="656" alt="Screenshot 2023-06-22 at 3 18 57 PM" src="https://github.com/emptybasket/anothertodo-app/assets/98072257/9b11b7fd-5747-4687-8052-196ba19a3e23">
 
+To get started, make sure you have Xcode 15.0 or a later version installed. It's important to note that, as of now, Xcode is still in beta. By the time you read this, there might have been some syntax changes or, if you're using the Xcode beta, you might encounter bugs related to the IDE along the way.
+
+<img width="786" alt="Screenshot 2023-06-23 at 2 42 01 PM" src="https://github.com/emptybasket/anothertodo-app/assets/98072257/f4a4b12a-423c-4900-a584-80baac64f7ca">
+
+For our project, we'll be working with an early version of a todo list app. Feel free to choose any name for your project, but just to give you an idea, here's what I named mine.
+
+<img width="1512" alt="Screenshot 2023-06-23 at 2 46 11 PM" src="https://github.com/emptybasket/anothertodo-app/assets/98072257/6efa483f-2d7e-46e5-afec-9f4bd47b3aca">
 
 
 ## Creating the ToDo Model
